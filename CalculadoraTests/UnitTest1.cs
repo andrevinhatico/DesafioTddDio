@@ -21,6 +21,7 @@ namespace CalculadoraTests
         [Theory]
         [InlineData(1, 2, 3)]
         [InlineData(4, 5, 9)]
+        [InlineData(10, 5, 15)]
         public void DeveRetornarSomaDe2Inteiros(int num1, int num2, int resultado)
         {
             Calculadora calc = ConstruirClasse();
@@ -39,6 +40,7 @@ namespace CalculadoraTests
         [Theory]
         [InlineData(6, 2, 4)]
         [InlineData(5, 5, 0)]
+        [InlineData(100, 5, 95)]
         public void DeveRetornarSubtracaoDe2Inteiros(int num1, int num2, int resultado)
         {
             Calculadora calc = ConstruirClasse();
@@ -57,6 +59,7 @@ namespace CalculadoraTests
         [Theory]
         [InlineData(1, 2, 2)]
         [InlineData(4, 5, 20)]
+        [InlineData(5, 100, 500)]
         public void DeveRetornarMultiplicacaoDe2Inteiros(int num1, int num2, int resultado)
         {
             Calculadora calc = ConstruirClasse();
@@ -75,6 +78,7 @@ namespace CalculadoraTests
         [Theory]
         [InlineData(6, 2, 3)]
         [InlineData(5, 5, 1)]
+        [InlineData(1000, 5, 200)]
         public void DeveRetornarDivisaoDe2Inteiros(int num1, int num2, int resultado)
         {
             Calculadora calc = ConstruirClasse();
